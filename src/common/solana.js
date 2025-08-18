@@ -30,7 +30,7 @@ export async function awaitTransactionSignatureConfirmation(
   timeout = 20000
 ) {
   let done = false;
-  const connectionOrca = genConnectionSolana();
+  const connectionOrca = connection;
   const result = await new Promise((resolve, reject) => {
     (async () => {
       setTimeout(() => {
